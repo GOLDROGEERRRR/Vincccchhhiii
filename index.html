@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounce 1s ease-in-out;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+
+        .button {
+          background-color: #ff0000; /* Red button */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WASSSUP MGA GUYS</h1>
+        <p id="message">Click niyo ang pakening generate message </p>
+        <button class="button" onclick="generateMessage()">Generate Message</button>
+    </div>
+
+    <script>
+        function generateMessage() {
+            let message = "Kumusta kayo mga guys! I understand that balancing schoolwork with deadlines bells seem to be eating away every single minute of your day, which is the precise reason I need to check if you are all doing alright. It is alright to feel overwhelmed, so please do prioritize breaks and essential self-care. I’m here any time if you just want to talk, vent, or unwind for a moment. Let's motivate one another to remember we’re all facing the same issues! Keep working hard, keep pushing forward, and remember never to hesitate if ever you need support. Together, we will make it, and I cannot express enough how fantastic it is to know we are all trying our best. Stay strong, friends!";
+            document.getElementById("message").textContent = message;
+        }
+    </script>
+</body>
+</html>
